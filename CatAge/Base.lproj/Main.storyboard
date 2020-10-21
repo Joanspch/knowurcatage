@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cats Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1j-LX-jxF">
+                                <rect key="frame" x="16" y="129" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuántos años tiene tu gato?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncn-RY-q6Y">
+                                <rect key="frame" x="16" y="183" width="382" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-RD-fzT">
+                                <rect key="frame" x="100" y="227" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hku-X9-Chu">
+                                <rect key="frame" x="16" y="281" width="382" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Click me!"/>
+                                <connections>
+                                    <action selector="resultadoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G6w-Iy-hRf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOG-HR-Iew">
+                                <rect key="frame" x="16" y="334" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="cats-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jie-dX-77h">
+                                <rect key="frame" x="16" y="375" width="382" height="471"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R1j-LX-jxF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0e9-GQ-oMJ"/>
+                            <constraint firstItem="wlF-RD-fzT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="1St-Et-3lk"/>
+                            <constraint firstItem="Jie-dX-77h" firstAttribute="top" secondItem="oOG-HR-Iew" secondAttribute="bottom" constant="20" id="33T-qS-r8e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oOG-HR-Iew" secondAttribute="trailing" constant="16" id="5Fy-Qy-EW9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R1j-LX-jxF" secondAttribute="trailing" constant="16" id="5Mv-is-QAM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jie-dX-77h" secondAttribute="trailing" constant="16" id="9IG-cn-fZ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jie-dX-77h" secondAttribute="bottom" constant="16" id="Eha-O5-7sB"/>
+                            <constraint firstItem="hku-X9-Chu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TA3-qs-MO2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wlF-RD-fzT" secondAttribute="trailing" constant="100" id="X4W-l4-MKq"/>
+                            <constraint firstItem="oOG-HR-Iew" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aTf-1M-feD"/>
+                            <constraint firstItem="hku-X9-Chu" firstAttribute="top" secondItem="wlF-RD-fzT" secondAttribute="bottom" constant="20" id="bCo-wT-GUj"/>
+                            <constraint firstItem="Ncn-RY-q6Y" firstAttribute="top" secondItem="R1j-LX-jxF" secondAttribute="bottom" constant="20" id="cwf-5B-eUp"/>
+                            <constraint firstItem="Jie-dX-77h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d6w-ha-Qsv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ncn-RY-q6Y" secondAttribute="trailing" constant="16" id="dhA-Cs-k3J"/>
+                            <constraint firstItem="wlF-RD-fzT" firstAttribute="top" secondItem="Ncn-RY-q6Y" secondAttribute="bottom" constant="20" id="gTZ-UP-AuC"/>
+                            <constraint firstItem="R1j-LX-jxF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="l8p-GL-nOk"/>
+                            <constraint firstItem="Ncn-RY-q6Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mbZ-om-yyq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hku-X9-Chu" secondAttribute="trailing" constant="16" id="pRt-tb-nXG"/>
+                            <constraint firstItem="oOG-HR-Iew" firstAttribute="top" secondItem="hku-X9-Chu" secondAttribute="bottom" constant="20" id="sQk-Gg-vMf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="wlF-RD-fzT" id="X2r-Pg-Q1n"/>
+                        <outlet property="resultadoLabel" destination="oOG-HR-Iew" id="as9-Iu-Zau"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cats-1" width="626" height="626"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
